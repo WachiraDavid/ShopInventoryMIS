@@ -1,0 +1,228 @@
+
+<html lang="en">
+	<head>
+     
+		<title>shop inventory MIS</title>
+        <link rel="icon" href="images/capture.png" type="image/gif" sizes="16x16">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+ 
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <style>
+        html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+        .mySlides {display:none}
+        .w3-tag, .fa {cursor:pointer}
+        .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    </style>
+
+	</head>
+	<body >
+   
+  <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card ">
+    <div class="w3-bar-item w3-left"> <img src="images/elogo.png" style="width:42px;height:42px;border:0;"><strong>enlighten</strong></div>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="logout.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Log Out</a>
+    <a href="#login" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Log In</a>
+    <a href="#register" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Register</a>
+    <a href="shop.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">My Shop</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Home</a>
+   
+
+  
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="myNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+  <a href="shop.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Shop</a>
+  <a href="#register" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Register</a>
+  <a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Log In</a>
+  <a href="logout.php" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Log Out</a>
+</div>
+
+
+<!--  Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+  <div class="w3-panel w3-center">
+    <h1><b>enlightentech shop inventory MIS</b></h1>
+    <p>You get to Manage your business inventory, track your stock and download statements all under one platform</p>
+  </div>
+ 
+ <!-- Slideshow -->
+ 
+    <div class="w3-display-container mySlides">
+      <img src="images/inventory2.jpg" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large  w3-opacity w3-animate-bottom">Bs Progress</span>
+      </div>
+    </div>
+
+     <div class="w3-display-container mySlides">
+      <img src="images/inventory3.jpg" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large  w3-opacity w3-animate-bottom">Stock Tracking</span>
+      </div>
+    </div>
+
+   
+    <div class="w3-display-container mySlides">
+      <img src="images/inventory5.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-opacity w3-animate-bottom">My shop</span>
+      </div>
+    </div>
+
+  <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  
+ 
+ <div class="w3-center w3-padding-64" id="register">
+     </p><button  class="w3-button w3-block w3-black"><a href="logout.php">LOGOUT</a></button></p>
+         </p><button class="w3-button w3-block w3-black"><a href="#register">REGISTER</a></button></p>
+           </p><button class="w3-button w3-block w3-black"><a href="#login">LOG IN</a></button></p>
+</div>
+
+<!-- About -->
+ <div class="w3-container w3-center" id="about" >
+  <div class="w3-content" style="max-width:700px" >
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Enlighten Shop Inventory MIS</span>
+  </div>
+  <p> </p>
+    <div class="w3-panel w3-leftbar ">
+    <p>Enlighten's Shop Inventory Management Information System is a platform that helps its users (shop owners) by allowing them to: -</p>
+    <p> <ul>
+      <li>Record their sales</li>
+      <li>Record their purchases </li>
+      <li>Track their stock</li>
+      <li>Download quarterly statements</li>
+      <li>Get allerts when they are running out of stock</li>
+      </ul>
+    </p>
+    </div>
+    
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><strong> management has never been easier</strong></i></p>
+    </div>
+  </div>
+
+  <!-- Register -->
+ <div class="w3-container w3-center" id="register">
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Register Here</span>
+  </div>
+
+  <form class="w3-container" action="/register.php" target="_blank">
+    <div class="w3-section">
+      <label>First Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="first_name" required>
+    </div>
+    <div class="w3-section">
+      <label>Last Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="last_name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="email" name="email" required>
+    </div>
+    <div class="w3-section">
+      <label>Preferred Password</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="password" name="password" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">SUBMIT</button>
+    <p> </p>
+    <button type="reset" class="w3-button w3-block w3-black">RESET</button>
+  </form>
+  </div>
+
+<!-- Log In -->
+  <div class="w3-center w3-padding-64" id="login">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Log In Here</span>
+  </div>
+
+<form class="w3-container" action="/login.php" target="_blank">
+   <div class="w3-section">
+      <label>Input Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="email" name="email" required>
+    </div>
+    <div class="w3-section">
+      <label>Input Your Password</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="password" name="password" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">SUBMIT</button>
+    <p><button type="reset" class="w3-button w3-block w3-black">RESET</button></p>
+</form>
+</div>
+<!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+     <P>&#169;<i>enlightentech</i></P>
+  </div>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+//Collapse nav bar
+function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
+
+	
+
+
