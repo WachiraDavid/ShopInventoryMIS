@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+
+    <title>shop inventory MIS</title>
+    <link rel="icon" href="images/capture.png" type="image/gif" sizes="16x16">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <style>
+        html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+        .mySlides {display:none}
+        .w3-tag, .fa {cursor:pointer}
+        .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    </style>
+
+</head>
+<body >
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card ">
+        <div class="w3-bar-item w3-left"> <img src="images/elogo.png" style="width:42px;height:42px;border:0;"><strong>enlighten</strong></div>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="logout.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Log Out</a>
+        <a href="shop.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">My Shop</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Home</a>
+
+
+
+    </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="myNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+    <a href="shop.php" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Shop</a>
+    <a href="logout.php" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Log Out</a>
+</div>
+
+<!--  Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+    <div class="w3-panel w3-center w3-card-4">
+        <h1><b>enlighten shop inventory MIS</b></h1>
+       <h3><p><b>This page helps you understand how to use the inventory management system</b></p></h3>
+        <h5><p><b>This is how you can use the Shop Inventory MIS</b></p></h5>
+    </div>
+
+    <div class="w3-row w3-margin w3-card-4">
+
+        <div class="w3-third">
+            <img src="images/register.PNG" style="width:100%;min-height:25px">
+        </div>
+        <div class="w3-twothird w3-container">
+            <h2>1. Create your account</h2>
+            <p>
+                - For you to use the Inventory MIS, you must be registered to your system.</br>
+                - Fill the registration form(like the one shown on your left) the click the SUBMIT  button to register
+            </p>
+        </div>
+
+    </div>
+    <div class="w3-row w3-margin w3-card-4">
+
+        <div class="w3-twothird w3-container">
+            <h2>2. Log In</h2>
+            <p>
+                - Fill the Log in form then click SUBMIT to log in.</br>
+                - Non the features in the Shop section can be accessed without Loging in.</br>
+                - This avoids access by unauthorized users.
+            </p>
+        </div>
+        <div class="w3-third">
+            <img src="images/login.PNG" style="width:100%;min-height:200px">
+        </div>
+
+
+    </div>
+    <div class="w3-row w3-margin w3-card-4">
+
+        <div class="w3-twothird">
+            <img src="images/shop1.PNG" style="width:100%;min-height:200px">
+        </div>
+        <div class="w3-third w3-container ">
+            <h2>3. My Shop</h2>
+
+            <p>
+                - This page gives logged in users access to all the management features of the system</br>
+                - These features include: -
+                <ul>
+            <li>Ability to stock the shop.</li>
+            <li>Ability to make sales in the system.</li>
+            <li>Ability to view the remaining and sold stock(quantity and prices).</li>
+            <li>Ability to view, download and/or print a profit and loss statement.</li>
+            <li>Access to this elaborate user guide/tutorial.</li>
+        </ul>
+            </p>
+        </div>
+
+    </div>
+    <div class="w3-row w3-margin w3-card-4">
+
+        <div class="w3-third w3-container">
+            <h2>4. View statement</h2>
+            <p>
+              - This feature allows user access to a profit and loss statement which they can: -
+                <ul>
+            <li>View in the system</li>
+            <li>Download</li>,and
+            <li>Print</li>
+        </ul>
+            </p>
+        </div>
+        <div class="w3-twothird">
+            <img src="images/statement.PNG" style="width:100%;min-height:200px">
+        </div>
+
+
+    </div>
+    <div class="w3-row w3-margin w3-card-4">
+
+        <div class="w3-twothird">
+            <img src="images/stock1.PNG" style="width:100%;min-height:200px">
+        </div>
+        <div class="w3-third w3-container">
+            <h2>5. Stock Shop</h2>
+            <p>
+                - This feature allows users to stock the shop.</br>
+                - The user can either: -
+                <ul>
+            <li>Fill a form to sock the shop for the first time, or</li>
+            <li>Use a simplified form to update the quantity of already existing stock items</li>
+        </ul>
+            </p>
+        </div>
+
+    </div>
+    <div class="w3-row w3-margin w3-card-4">
+
+        <div class="w3-third w3-container">
+            <h2>6. Make Sale</h2>
+            <p>
+               - Here, users can click the sell button to add items to a cart that helps them;
+                <ul>
+            <li>View all items in the sale</li>
+            <li>Calculate the total price of the items on sale</li>
+            <li>Edit the cart to remove unnecessary items from the cart if necessary</li>
+        </ul>
+            </p>
+        </div>
+        <div class="w3-twothird">
+            <img src="images/sale.PNG" style="width:100%;min-height:200px">
+        </div>
+
+
+    </div>
+
+    <div class="w3-row w3-margin w3-card-4">
+
+        <div class="w3-twothird">
+            <img src="images/inventory.PNG" style="width:100%;min-height:200px">
+        </div>
+        <div class="w3-third w3-container">
+            <h2>7. View Inventory/Stock</h2>
+            <p>
+
+                - This feature allows users to view their various items that are in stock together with their details which include: -
+                <ul>
+            <li>Item Name</li>
+            <li>Item Quantity</li>
+            <li>Buying price</li>
+            <li>Selling Price</li>
+        </ul>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <P>&#169;<i>enlighten</i></P>
+    </div>
+</footer>
+
+<script>
+
+    //Collapse nav bar
+    function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+<html lang="en">
+	<head>
+     
+		<title>shop inventory MIS</title>
+        <link rel="icon" href="images/capture.png" type="image/gif" sizes="16x16">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+ 
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <style>
+        html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+        .mySlides {display:none}
+        .w3-tag, .fa {cursor:pointer}
+        .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    </style>
+
+	</head>
+	<body >
+   
+  <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card ">
+    <div class="w3-bar-item w3-left"> <img src="images/elogo.png" style="width:42px;height:42px;border:0;"><strong>enlighten</strong></div>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="logout.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Log Out</a>
+    <a href="#login" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Log In</a>
+     <a href="shop.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">My Shop</a>
+    <a href="#register" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Register</a>
+     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">About</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Home</a>
+   
+
+  
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="myNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">about</a>
+    <a href="shop.php" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Shop</a>
+  <a href="#register" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Register</a>
+  <a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Log In</a>
+  <a href="logout.php" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Log Out</a>
+</div>
+
+<!--  Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+  <div class="w3-panel w3-center">
+    <h1><b>enlightentech shop inventory MIS</b></h1>
+    <p>Current/Available Stock</p>
+  </div>
+</div>
+
+<div class="w3-responsive">
+  <table class="w3-table-all w3-hoverable">
+    <thead>
+  <tr class="w3-black">
+    <th>Description</th>
+    <th>Code</th>
+    <th>Quantity</th>
+    <th>Buying Price</th>
+    <th>Selling Price</th>
+  </tr>
+
+
+
+</thead>
+
+
+  </table>
+</div>
+
+
+<!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+     <P>&#169;<i>enlightentech</i></P>
+  </div>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+//Collapse nav bar
+function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
+
+254706636596
+0639
